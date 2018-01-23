@@ -3,7 +3,6 @@ package com.Start;
 public class Main {
     public static void main(String args[]){
         testEverythingOnce();
-        testEverythingOnce();
     }
     private static void testEverythingOnce(){
         int parse1 = 3;

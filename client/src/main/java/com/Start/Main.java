@@ -3,6 +3,9 @@ package com.Start;
 public class Main {
     public static void main(String args[]){
         testEverythingOnce();
+        testEverythingOnce();
+        testEverythingOnce();
+        testEverythingOnce();
     }
     private static void testEverythingOnce(){
         int parse1 = 3;
@@ -21,10 +24,13 @@ public class Main {
 
         try {
             parse1 = StringProcessorProxy.getStringProcessorProxy()._parseInteger("1235");
-        }catch (Exception e){}
+        }catch (Exception e){
+            System.out.println("unexpected failure");
+        }
         try {
             parse2 = StringProcessorProxy.getStringProcessorProxy().parseInteger("-1235");
-        }catch (Exception e){}
+        }catch (Exception e){
+            System.out.println("unexpected failure");}
 
         if (lower1.equals(lower2))
             System.out.println("ToLowerCase works!");

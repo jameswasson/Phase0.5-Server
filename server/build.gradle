@@ -1,0 +1,16 @@
+apply plugin: 'java'
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    compile 'org.xerial:sqlite-jdbc:3.20.1'
+    compile 'org.testifyproject.junit4:junit4:0.9.9'
+    compile files('jars/JUnit4/hamcrest-core-1.3.jar')
+    compile files('jars/JUnit4/junit-4.12.jar')
+    compile files('jars/json-20160212.jar')
+    compile files('jars/sqlite-jdbc-3.7.2.jar')
+    compile 'org.kie.modules:com-google-code-gson:6.5.0.Final'
+    compile 'com.google.code.gson:gson:2.2.4'
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
